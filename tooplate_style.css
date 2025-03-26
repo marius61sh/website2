@@ -728,3 +728,220 @@ h6 {
         max-width: 150px;
     }
 }
+
+/* Base styles remain unchanged from your original CSS */
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 540px) {
+    #tooplate_wrapper {
+        width: 100%;
+        padding: 5px;
+    }
+
+    #tooplate_header {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #site_title h1 {
+        padding: 10px 0 0 10px;
+    }
+
+    #tooplate_menu {
+        width: 100%;
+        margin-top: 15px;
+        padding: 0;
+        height: auto;
+        justify-content: center;
+        border-radius: 3px;
+    }
+
+    #tooplate_menu ul {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    #tooplate_menu ul li {
+        margin: 5px 0;
+    }
+
+    #tooplate_menu ul li a {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 16px; /* Larger for touch usability */
+        line-height: 1.5em;
+    }
+
+    #tooplate_main {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    #tooplate_middle {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+        background-size: cover; /* Ensure background image scales */
+    }
+
+    #tooplate_middle .mid_box {
+        width: 100%;
+        margin: 0 0 15px 0;
+        padding: 10px;
+        height: auto;
+    }
+
+    #tooplate_middle .main_box {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    #tooplate_middle .main_box_title {
+        font-size: 20px;
+        line-height: 1.4em;
+    }
+
+    #tooplate_middle .main_box_title span {
+        font-size: 24px;
+    }
+
+    #tooplate_middle a.learn_here {
+        width: 100%;
+        max-width: 280px;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+    #tooplate_content {
+        width: 100%;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .col_w900,
+    .col_w900_last {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .col_w580,
+    .col_w420,
+    .col_w280,
+    .col_allw280 {
+        max-width: 100%;
+    }
+
+    .post_box {
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .post_box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #gallery ul {
+        gap: 10px;
+    }
+
+    #gallery ul li {
+        width: 100%;
+        max-width: none;
+    }
+
+    #gallery ul li a img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    #gallery ul li span {
+        width: 80%;
+        left: 10px;
+        bottom: 10px;
+        font-size: 16px;
+    }
+
+    #contact_form {
+        max-width: 100%;
+    }
+
+    #contact_form form .input_field,
+    #contact_form form textarea {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #contact_form form textarea {
+        height: 150px; /* Slightly shorter for tall screens */
+    }
+
+    #tooplate_footer {
+        width: 100%;
+        padding: 20px 10px;
+        font-size: 12px;
+    }
+
+    /* Font size adjustments */
+    h1 { font-size: 24px; margin-bottom: 15px; }
+    h2 { font-size: 20px; margin-bottom: 10px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+    .con_tit_01 { font-size: 22px; }
+    .con_tit_02 { font-size: 18px; }
+
+    /* Spacing adjustments */
+    .h10, .h20, .h30, .h40, .h50, .h60 {
+        height: 10px;
+    }
+
+    /* Image adjustments */
+    .image_fl, .image_fr {
+        float: none;
+        margin: 5px auto;
+        display: block;
+    }
+
+    .lp_box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    a.more {
+        width: 100%;
+        max-width: 200px;
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
+/* For very narrow screens or higher pixel density */
+@media screen and (max-width: 360px) {
+    body {
+        font-size: 11px;
+    }
+
+    #tooplate_menu ul li a {
+        font-size: 14px;
+    }
+
+    #tooplate_middle .main_box_title {
+        font-size: 18px;
+    }
+
+    #tooplate_middle a.learn_here {
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
+
+/* Ensure viewport meta tag is in your HTML head */
